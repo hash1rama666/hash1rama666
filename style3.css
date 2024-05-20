@@ -1,0 +1,143 @@
+body {
+     background-color: black;
+    font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 50px;
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*навигация*/
+
+.nav {
+    margin-left: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: darkred
+}
+
+/*шапка*/
+.header {
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    margin-left: 30px;
+    font-size: 24px; 
+    font-weight: 700;
+    color: white; 
+}
+
+/*секция2*/
+.section {
+    margin-top: 57px;
+    padding: 80px 0;
+    background: url("../assets/anime4.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.section_header {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.section_suptitle {
+    font-style: normal;
+    font-size: 33px;
+    color: white;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
+    -webkit-text-stroke: 2px #854268;
+  
+}
+
+.section_title {
+    
+    font-size: 22px;
+    color: white;
+    line-height: 2;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    border: 1.5px solid white; 
+    padding: 10px; 
+    background-color: rgba(82, 10, 40, 0.25)
+    
+}
+
+.text {
+     font-style: normal;
+    font-size: 22px;
+    color: white;
+    line-height: 3;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+    border: 1.5px solid white; 
+    padding: 3px; 
+    background-color: rgba(82, 10, 40, 0.25)
+}
+
+
+
+.images {
+    margin-top: 20px;
+    display: flex;
+     width: 30%; 
+    max-width: 3000px; 
+    text-align: center;
+    position: relative;
+}
+
+
+.images img:first-child {
+    width: 120%;
+     margin-right: 20px;
+}
+
+.images img:last-child {
+    width: 210%; 
+}

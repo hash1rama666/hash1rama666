@@ -1,0 +1,188 @@
+body {
+     background-color: black;
+    font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 50px;
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../assets/fon61.png") center no-repeat;
+    background-size: cover;
+    margin-top: 12vh;
+}
+
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.intro_title {
+    font-family: "Play", sans-serif;
+    font-size: 70px;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+#snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('https://i.imgur.com/BiSmXaq.png'), url('https://i.imgur.com/okpRxJU.png');
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    100% { background-position: 500px 1000px, 400px 400px, 300px 300px; }
+}
+
+/*шапка*/
+.header {
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    margin-left: 30px;
+    font-size: 24px; 
+    font-weight: 700;
+    color: white; 
+}
+
+/*навигация*/
+
+.nav {
+    margin-left: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: darkred
+}
+
+/*секция2*/
+.section {
+    padding: 80px 0;
+    background: url("../assets/fon11.png") center no-repeat;
+    background-size: cover;
+}
+
+.section_header {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.section_suptitle {
+    font-style: italic;
+    font-size: 25px;
+    color: #cc9b9b;
+    line-height: 2;
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  
+}
+
+.section_title {
+    
+    font-size: 25px;
+    color: #6b0303;
+    line-height: 2;
+    font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.silviasection {
+    padding: 80px 0;
+    background-size: cover;
+}
+
+.silvia {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    margin-top: -180px;
+    padding: 80px 0;
+    background: url(../assets/patno4.png) center no-repeat;
+    background-size: cover;
+}
+
+.silvia_item {
+    width: 60%; 
+    max-width: 2500px; 
+    text-align: center;
+    position: relative;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.silvia_img img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.silvia_item:nth-child(2){
+    margin-top: -50px;
+}
+.silvia_item:nth-child(2) .silvia_img img:hover {
+    filter: grayscale(100%) brightness(350%);
+}
+
